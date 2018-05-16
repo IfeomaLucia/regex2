@@ -14,7 +14,6 @@ let text = `During today's presentation "Valentine Oragbakosi" presented first f
 function names(text){
     var pattern2= /["][a-zA-Z.]+\s?\w+\s?\w*["]/gi//check for the name match between the double quote
  var newstring3=text.match(pattern2).toString();//serch for the pattern and convert the array to a string
- var newstring3=newstring3.replace("\"","")//replaces double quotes with an empty string
  console.log([newstring3])//convert to an array and print out.
 }
 names(text)
