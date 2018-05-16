@@ -21,7 +21,7 @@ names(text)
  
 var genesys="http://genesystechhub.com"
 function url(genesys){
-    var pattern3= new RegExp('(^(http)?://([a-zA-Z1-9-_.*]+\.[A-Za-z]+))', 'gi')
+   var pattern3= new RegExp('(^(https?|ftps?)?://([a-zA-Z1-9-_.*]+\.[A-Za-z]+))', 'gi')
 var newstr =genesys.replace(pattern3, "visit <a href='$1'>$3</a>")
 console.log(newstr)
 }
