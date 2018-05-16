@@ -1,6 +1,6 @@
 var color="#AACCFF"
 function hexdem(color){
-    var pattern1= new RegExp('[#][a-zA-Z1-9]{6}', 'g');
+    var pattern1= new RegExp('[#][a-fA-F0-9]{3,8}', 'g');
 var newstring2=pattern1.test(color)
 console.log(newstring2)
 }
