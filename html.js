@@ -20,8 +20,8 @@ names(text)
  
 var genesys="visit https://genesystechhub.com for more information about Genesys or ftp://kk.ng for new info about kk"
 function url(genesys){
-    var pattern3= new RegExp('((https?|ftps?)://(www)?([a-zA-Z0-9-_]+\.[a-zA-Z]{2,6}))', 'gi')//searches for the url pattern
-var newstr =genesys.replace(pattern3, "visit <a href='$1'>$4</a>")//replaces the url with a href link
+    var pattern3= new RegExp('((?:https?|ftps?)://(?:www)?([a-zA-Z0-9-_]+\.[a-zA-Z]{2,6}))', 'gi')//searches for the url pattern
+var newstr =genesys.replace(pattern3, "<a href='$1'>$2</a>")//replaces the url with a href link
 console.log(newstr)//outputs the link
 }
 url(genesys)
